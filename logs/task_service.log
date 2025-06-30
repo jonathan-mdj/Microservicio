@@ -1,0 +1,36 @@
+Base de datos inicializada correctamente
+Iniciando Task Service en puerto 5003...
+ * Serving Flask app 'app'
+ * Debug mode: on
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5003
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 315-328-453
+127.0.0.1 - - [29/Jun/2025 23:32:36] "[31m[1mGET /tasks HTTP/1.1[0m" 401 -
+127.0.0.1 - - [29/Jun/2025 23:54:03] "[33mGET /health HTTP/1.1[0m" 404 -
+127.0.0.1 - - [29/Jun/2025 23:56:00] "[33mGET /health HTTP/1.1[0m" 404 -
+127.0.0.1 - - [30/Jun/2025 11:57:11] "[35m[1mPOST /register HTTP/1.1[0m" 201 -
+127.0.0.1 - - [30/Jun/2025 11:59:28] "POST /login HTTP/1.1" 200 -
+127.0.0.1 - - [30/Jun/2025 12:09:41] "[31m[1mPOST /task HTTP/1.1[0m" 401 -
+127.0.0.1 - - [30/Jun/2025 12:09:48] "POST /login HTTP/1.1" 200 -
+127.0.0.1 - - [30/Jun/2025 12:09:53] "[31m[1mPOST /task HTTP/1.1[0m" 401 -
+127.0.0.1 - - [30/Jun/2025 12:11:30] "POST /login HTTP/1.1" 200 -
+127.0.0.1 - - [30/Jun/2025 12:12:52] "[35m[1mPOST /task HTTP/1.1[0m" 201 -
+127.0.0.1 - - [30/Jun/2025 12:14:06] "GET /tasks HTTP/1.1" 200 -
+127.0.0.1 - - [30/Jun/2025 12:15:46] "GET /task/1 HTTP/1.1" 200 -
+127.0.0.1 - - [30/Jun/2025 12:17:02] "[31m[1mPUT /task/1 HTTP/1.1[0m" 401 -
+127.0.0.1 - - [30/Jun/2025 12:17:08] "POST /login HTTP/1.1" 200 -
+127.0.0.1 - - [30/Jun/2025 12:17:12] "[31m[1mPUT /task/1 HTTP/1.1[0m" 401 -
+127.0.0.1 - - [30/Jun/2025 12:17:36] "POST /login HTTP/1.1" 200 -
+127.0.0.1 - - [30/Jun/2025 12:18:27] "PUT /task/1 HTTP/1.1" 200 -
+127.0.0.1 - - [30/Jun/2025 12:19:18] "DELETE /task/1 HTTP/1.1" 200 -
+127.0.0.1 - - [30/Jun/2025 12:20:05] "[31m[1mGET /tasks/status/Completed HTTP/1.1[0m" 400 -
+127.0.0.1 - - [30/Jun/2025 12:21:56] "[31m[1mGET /tasks/status/Completed HTTP/1.1[0m" 400 -
+127.0.0.1 - - [30/Jun/2025 12:22:02] "POST /login HTTP/1.1" 200 -
+127.0.0.1 - - [30/Jun/2025 12:22:33] "[31m[1mGET /tasks/status/Completed HTTP/1.1[0m" 400 -
+127.0.0.1 - - [30/Jun/2025 12:23:57] "[31m[1mGET /tasks/status/In%20Progress HTTP/1.1[0m" 400 -
+127.0.0.1 - - [30/Jun/2025 14:41:17] "POST /login HTTP/1.1" 200 -
+127.0.0.1 - - [30/Jun/2025 14:41:39] "GET /tasks/status/completed HTTP/1.1" 200 -
+127.0.0.1 - - [30/Jun/2025 14:42:18] "GET /tasks/status/completed HTTP/1.1" 200 -
